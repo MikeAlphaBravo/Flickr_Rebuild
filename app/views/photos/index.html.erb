@@ -1,7 +1,7 @@
 <h1>Check out these photos:</h1>
 
 <ul class="list-group">
-  <% @photos.each do |photo| %>
-    <li class="list-group-item"><%= image_tag(@photos.image.url) %></li>
+  <% @photos.each do | photo| %>
+    <li class="list-group-item"><%= image_tag(photo.image) %></li>
   <% end %>
 </ul>
