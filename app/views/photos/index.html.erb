@@ -2,6 +2,7 @@
 
 <ul class="list-group">
   <% @photos.each do | photo| %>
+    <li><%= photo.title %></li>
     <li class="list-group-item"><%= image_tag(photo.image) %></li>
   <% end %>
 </ul>
